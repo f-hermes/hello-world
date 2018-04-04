@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Attendee</ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+        <ion-item>
+            <ion-label>Firstname</ion-label>
+            <div item-content>
+                <span>{{attendee.firstname}}</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <ion-label>Lastname</ion-label>
+            <div item-content>
+                <span>{{attendee.lastname}}</span>
+            </div>
+        </ion-item>
+    </ion-list>
+
+    <button ion-button block (click)="open(attendee)">{{ 'EDIT_BUTTON' | translate }}</button>
+</ion-content>
